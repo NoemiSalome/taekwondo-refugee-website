@@ -13,62 +13,100 @@
 
     <header class="site-header">
         <a href="#" class="logo">
-            <img src="assets/logo.svg" alt="Logo von Swiss Taekwondo" width="48" height="48">
+            <img src="assets/logo/Swiss Logo 2018 _UHP Team.svg" alt="Swiss Taekwondo UHP Team" class="logo__image">
         </a>
 
         <input type="checkbox" id="nav-toggle" class="nav-toggle">
-        <label for="nav-toggle" class="nav-toggle-label" aria-label="Menü öffnen">
-            <span></span>
-            <span></span>
-            <span></span>
-        </label>
 
-        <nav class="site-nav">
+        <nav class="site-nav" aria-label="Hauptnavigation">
             <ul>
-                <li><a href="#ausgangslage">Nationalkader</a></li>
-                <li><a href="#benefits">UHP</a></li>
-                <li><a href="#benefits">News</a></li>
-                <li><a href="#kontakt">Kontakt</a></li>
+                <li><a href="#ausgangslage">Ausgangslage</a></li>
+                <li><a href="#ziel">Ziel</a></li>
+                <li><a href="#ethik">Ethik</a></li>
+                <li><a href="#benefits">Benefits</a></li>
                 <li><a href="#engagement">Engagement</a></li>
             </ul>
         </nav>
+
+        <div class="header-tools">
+            <ul class="header-external" aria-label="Weitere Websites">
+                <li>
+                    <a href="https://www.taekwondo.ch" class="header-external__link" target="_blank" rel="noopener noreferrer">
+                        Swiss Taekwondo
+                        <svg class="header-external__icon" width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true">
+                            <path d="M9.5 1.5H12.5V4.5" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M8 6L12.5 1.5M5.5 2.5H3.5C2.67 2.5 2 3.17 2 4V11C2 11.83 2.67 12.5 3.5 12.5H10.5C11.33 12.5 12 11.83 12 11V9" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.taekwondobern.ch" class="header-external__link" target="_blank" rel="noopener noreferrer">
+                        Taekwondo Bern
+                        <svg class="header-external__icon" width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true">
+                            <path d="M9.5 1.5H12.5V4.5" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M8 6L12.5 1.5M5.5 2.5H3.5C2.67 2.5 2 3.17 2 4V11C2 11.83 2.67 12.5 3.5 12.5H10.5C11.33 12.5 12 11.83 12 11V9" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </a>
+                </li>
+            </ul>
+
+            <button type="button" class="lang-switch" aria-label="Sprache: Deutsch">
+                <span class="lang-switch__label">Deutsch</span>
+                <svg class="lang-switch__icon" width="18" height="18" viewBox="0 0 18 18" fill="none" aria-hidden="true">
+                    <circle cx="9" cy="9" r="7.25" stroke="currentColor" stroke-width="1.2"/>
+                    <path d="M1.75 9H16.25M9 1.75C11.25 4.5 11.25 13.5 9 16.25M9 1.75C6.75 4.5 6.75 13.5 9 16.25" stroke="currentColor" stroke-width="1.2"/>
+                </svg>
+            </button>
+
+            <label for="nav-toggle" class="nav-toggle-label" aria-label="Menü öffnen">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+        </div>
     </header>
 
     <main>
         <section class="hero">
-            <div class="hero__content">
-                <p class="hero__label">Swiss Taekwondo UHP Team</p>
-                <h1>United High Performance Team</h1>
-                <p class="hero__text">
-                    Die besten Sportler:innen der Schweiz in einem Team,
-                    mit einem Ziel: Olympia.
-                </p>
-                <a href="#engagement" class="btn btn--primary">Partner werden</a>
+            <div class="hero__panel">
+                <div class="hero__content">
+                    <p class="hero__label">Swiss Taekwondo UHP Team</p>
+                    <h1>United High Performance Team</h1>
+                    <p class="hero__text">
+                        Die besten Sportler:innen der Schweiz in einem Team,
+                        mit einem Ziel: Olympia.
+                    </p>
+                    <a href="#engagement" class="btn btn--primary">Partner werden</a>
+                </div>
             </div>
-            <img src="assets/hero.jpg" alt="Taekwondo Athlet im Wettkampf" class="hero__image">
+            <img src="assets/bilder/testmatchday_may-461.jpg" alt="Taekwondo Athlet im Wettkampf" class="hero__image">
         </section>
 
         <section class="section section--gray" id="ausgangslage">
             <div class="container split-grid">
                 <div class="split-grid__title">
-                    <p class="section-label">Wer wir sind</p>
-                    <h2>Starke Athleten. Schwache Strukturen.</h2>
+                    <p class="section-label">Ausgangslage</p>
+                    <h2>Starke Athleten.<br><span class="heading-normal">Schwache Strukturen.</span></h2>
                 </div>
                 <div class="split-grid__content">
-                    <p>
-                        Viele junge Taekwondo-Talente trainieren mit Leidenschaft und Disziplin –
-                        doch ohne klare Strukturen fehlt oft der Rahmen für nachhaltige Entwicklung.
+                    <p class="text-emphasis">
+                        Swiss Taekwondo fördert zahlreiche internationale Spitzensportler:innen, darunter
+                        Flüchtlinge, Menschen mit Migrationshintergrund, die entscheidend zum Leistungsniveau
+                        des nationalen Trainingsbetriebs beitragen. Für sie fehlt bisher eine klare
+                        Unterstützungsstruktur.
                     </p>
                     <p>
-                        Das UHP Team schafft einen Ort, an dem Leistung und Verantwortung
-                        zusammenkommen: mit professioneller Betreuung, definierten Leistungsstandards
-                        und Zugang zu internationalen Wettkämpfen.
+                        Das Hochleistungssystem von Swiss Taekwondo – der HUB – richtet sich primär an
+                        Schweizer Nationalkader-Athlet:innen. Gleichzeitig trainieren im selben Umfeld
+                        zahlreiche internationale Athlet:innen als Trainingspartner:innen, Coaches und
+                        Leistungsträger. Ihre Unterstützung erfolgte bisher informell – ein Zustand, der
+                        weder fair noch nachhaltig ist.
                     </p>
                 </div>
             </div>
         </section>
 
-        <section class="section" id="ethik">
+        <section class="section" id="ziel">
             <div class="container split-grid split-grid--reverse">
                 <div class="split-grid__content">
                     <p>
@@ -89,17 +127,17 @@
                     </div>
                 </div>
                 <div class="split-grid__title">
-                    <p class="section-label">01.</p>
+                    <p class="section-label">Ziel</p>
                     <h2>Ein Team. Ohne Wenn und Aber.</h2>
-                    <img src="assets/placeholder.svg" alt="One Team Grafik" class="section-badge">
+                    <img src="assets/Icons/OneTeam.svg" alt="One Team Grafik" class="section-badge">
                 </div>
             </div>
         </section>
 
-        <section class="section section--gray" id="leistung">
+        <section class="section section--gray" id="ethik">
             <div class="container split-grid">
                 <div class="split-grid__title">
-                    <p class="section-label">02.</p>
+                    <p class="section-label">Ethik</p>
                     <h2>Leistung und Verantwortung. Kein Widerspruch.</h2>
                     <p>
                         Athlet:innen im Performance HUB verpflichten sich zu regelmässigem Training,
@@ -143,20 +181,28 @@
                     <article class="engagement-box">
                         <p class="engagement-box__label">Folge uns</p>
                         <ul class="social-links">
-                            <li><a href="#">Instagram</a></li>
-                            <li><a href="#">Facebook</a></li>
+                            <li>
+                                <a href="#" aria-label="Instagram">
+                                    <img src="assets/socialmedia/instagram.svg" alt="" class="social-links__icon" width="40" height="40">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" aria-label="Facebook">
+                                    <img src="assets/socialmedia/facebook.svg" alt="" class="social-links__icon" width="40" height="40">
+                                </a>
+                            </li>
                         </ul>
                     </article>
                     <article class="engagement-box">
                         <p class="engagement-box__label">Aktiv helfen</p>
-                        <a href="#" class="btn btn--light">Unterstützen</a>
+                        <a href="#" class="btn btn--invert">Unterstützen</a>
                     </article>
                     <article class="engagement-box">
                         <form class="newsletter-form" action="#" method="post">
                             <label for="newsletter-email">Newsletter</label>
                             <p class="newsletter-form__row">
                                 <input type="email" id="newsletter-email" name="email" placeholder="E-Mail-Adresse" required>
-                                <button type="submit" class="btn btn--light">Abonnieren</button>
+                                <button type="submit" class="btn btn--invert">Abonnieren</button>
                             </p>
                         </form>
                     </article>
@@ -164,11 +210,11 @@
             </div>
         </section>
 
-        <section class="section" id="benefits">
+        <section class="section section--gray" id="benefits">
             <div class="container">
                 <div class="split-grid">
                     <div class="split-grid__title">
-                        <p class="section-label">Gemeinsam voran</p>
+                        <p class="section-label">Benefits</p>
                         <h2>Für Athlet:innen. Endlich ein fairer Rahmen.</h2>
                     </div>
                     <div class="split-grid__content">
@@ -184,28 +230,58 @@
                 </div>
                 <div class="card-grid">
                     <article class="card">
-                        <img src="assets/placeholder.svg" alt="News Beitrag 1" class="card__image">
-                        <p class="card__meta">News · 12.03.2025</p>
-                        <h3>EYOF 2025: Schweizer Team in Skopje</h3>
-                        <a href="#" class="card__link">Mehr erfahren</a>
+                        <img src="assets/bilder/em_aigle2025-23.jpg" alt="EYOF 2025: Schweizer Team in Skopje" class="card__image">
+                        <div class="card__body">
+                            <div class="card__meta">
+                                <span class="card__tag">News</span>
+                                <span class="card__tag-line" aria-hidden="true"></span>
+                                <p class="card__date">12.03.2025</p>
+                            </div>
+                            <h3 class="card__title">EYOF 2025: Schweizer Team in Skopje</h3>
+                            <p class="card__text">
+                                Vier Athlet:innen treten erstmals unter dem Swiss Taekwondo
+                                Refugee Team-Label an.
+                            </p>
+                            <a href="#" class="card__link btn btn--ghost">Mehr erfahren →</a>
+                        </div>
                     </article>
                     <article class="card">
-                        <img src="assets/placeholder.svg" alt="News Beitrag 2" class="card__image">
-                        <p class="card__meta">News · 04.02.2025</p>
-                        <h3>Performance HUB: Halbjahres-Review</h3>
-                        <a href="#" class="card__link">Mehr erfahren</a>
+                        <img src="assets/bilder/shadow_hub.jpg" alt="Performance HUB Halbjahres-Review" class="card__image">
+                        <div class="card__body">
+                            <div class="card__meta">
+                                <span class="card__tag">News</span>
+                                <span class="card__tag-line" aria-hidden="true"></span>
+                                <p class="card__date">04.02.2025</p>
+                            </div>
+                            <h3 class="card__title">Performance HUB: Halbjahres-Review</h3>
+                            <p class="card__text">
+                                Rückblick auf Trainingscamps, Wettkämpfe und Entwicklung
+                                im ersten Halbjahr.
+                            </p>
+                            <a href="#" class="card__link btn btn--ghost">Mehr erfahren →</a>
+                        </div>
                     </article>
                     <article class="card">
-                        <img src="assets/placeholder.svg" alt="News Beitrag 3" class="card__image">
-                        <p class="card__meta">News · 18.01.2025</p>
-                        <h3>Trainingscamp Maria Alm</h3>
-                        <a href="#" class="card__link">Mehr erfahren</a>
+                        <img src="assets/bilder/testmatchday_may-296.jpg" alt="Trainingscamp Maria Alm" class="card__image">
+                        <div class="card__body">
+                            <div class="card__meta">
+                                <span class="card__tag">News</span>
+                                <span class="card__tag-line" aria-hidden="true"></span>
+                                <p class="card__date">18.01.2025</p>
+                            </div>
+                            <h3 class="card__title">Trainingscamp Maria Alm</h3>
+                            <p class="card__text">
+                                Intensives Trainingslager mit Fokus auf Wettkampfvorbereitung
+                                und Teamgeist.
+                            </p>
+                            <a href="#" class="card__link btn btn--ghost">Mehr erfahren →</a>
+                        </div>
                     </article>
                 </div>
             </div>
         </section>
 
-        <section class="section section--gray" id="ziel">
+        <section class="section" id="benefits-ch">
             <div class="container split-grid split-grid--reverse">
                 <div class="split-grid__content">
                     <p>
@@ -220,7 +296,6 @@
                     </p>
                 </div>
                 <div class="split-grid__title">
-                    <p class="section-label">Unsere Werte & Ziele</p>
                     <h2>Für die Schweiz: Stärker durch Vielfalt und Erfahrung.</h2>
                 </div>
             </div>
@@ -232,16 +307,16 @@
                 <h2>Unsere Partner & Träger</h2>
                 <div class="partner-grid">
                     <article class="partner-card">
-                        <img src="assets/placeholder.svg" alt="Logo von Swiss Olympic" class="partner-logo">
-                        <p>Swiss Olympic</p>
-                    </article>
-                    <article class="partner-card">
-                        <img src="assets/placeholder.svg" alt="Logo von Swiss Sporthilfe" class="partner-logo">
-                        <p>Swiss Sporthilfe</p>
-                    </article>
-                    <article class="partner-card">
-                        <img src="assets/placeholder.svg" alt="Logo von Swiss Taekwondo" class="partner-logo">
+                        <img src="assets/logo/cmdf-logo-white.svg" alt="Logo von Swiss Taekwondo" class="partner-logo">
                         <p>Swiss Taekwondo</p>
+                    </article>
+                    <article class="partner-card">
+                        <img src="assets/logo/TaekwondoBern.png" alt="Logo von Taekwondo Bern" class="partner-logo">
+                        <p>Taekwondo Bern</p>
+                    </article>
+                    <article class="partner-card">
+                        <img src="assets/logo/Swiss Logo 2018 _UHP Team.svg" alt="Logo UHP Team" class="partner-logo partner-logo--color">
+                        <p>UHP Team</p>
                     </article>
                 </div>
             </div>
@@ -251,7 +326,7 @@
     <footer class="site-footer" id="kontakt">
         <div class="container footer-grid">
             <a href="#" class="logo-box">
-                <img src="assets/logo.svg" alt="Logo von Swiss Taekwondo" width="80" height="80">
+                <img src="assets/logo/Swiss Logo 2018 _UHP Team_TfA.svg" alt="Swiss Taekwondo UHP Team" class="logo-box__image">
             </a>
             <form class="contact-form" action="#" method="post">
                 <label for="name">Name</label>
@@ -263,7 +338,7 @@
                 <label for="message">Nachricht</label>
                 <textarea id="message" name="message" required></textarea>
 
-                <button type="submit" class="btn btn--primary">Absenden</button>
+                <button type="submit" class="btn btn--primary">Nachricht senden</button>
             </form>
         </div>
         <div class="container footer-bottom">
